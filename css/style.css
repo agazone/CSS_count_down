@@ -1,0 +1,106 @@
+body {
+    margin-left: 0;
+}
+
+.cell {
+    width: 100%;
+    height: 150px;
+    font-size: 150px;
+    font-family: OpenSans;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+    top: 20%;
+}
+
+.num {
+    position: absolute;
+    width: 1em;
+    color: #ffffff;
+    line-height: 1em;
+    text-align: center;
+    animation: run 22s steps(12);
+}
+
+
+@keyframes run {
+    0% {display: none; top: 0; opacity: 0;}
+    1% {opacity: 1;}
+    96% {color: white;}
+    97% {
+        color: red;
+        animation-timing-function: ease-in;     
+    }
+    100% {
+        top: -12em; 
+    }
+}
+
+
+/*
+body {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.wrapper {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: relative;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    font-family: OpenSans;
+    overflow: hidden;
+    position: absolute;
+}
+
+.numberChanger{
+    
+    font-weight: bold;
+   
+    display: block;
+}
+
+.numberChanger::after{
+  animation: changeNumber 1s linear;
+}
+
+
+@keyframes changeNumber{
+  0% {
+    content: "1";
+  }
+  1% {
+    content: "2";
+  }
+  2% {
+    content: "3";
+  }
+  3% {
+    content: "4";
+  }
+  4% {
+    content: "5";
+  }
+  5% {
+    content: "6";
+  }
+  6% {
+    content: "7";
+  }
+  7% {
+    content: "8";
+  }
+  8% {
+    content: "9";
+  }
+  9% {
+    content: "10";
+  }
+  10% {
+    content: "I love CSS :)";
+  }
+}
+*/
